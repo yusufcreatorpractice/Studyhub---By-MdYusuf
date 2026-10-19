@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyHub - By Md Yusuf</title>
+
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #2c3e50;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #3498db;
+
+     
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #3498db;
+        }
+
+        /* Header / Hero Section */
+        .hero {
+            background: linear-gradient(to right, #2980b9, #2c3e50);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #ecf0f1;
+            margin-bottom: 15px;
+        }
+
+        /* Developer Badge Tag */
+        .dev-badge {
+            display: inline-block;
+            background-color: #e74c3c;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        /* Main Content Container */
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 30px;
+            color: #2c3e50;
+        }
+
+        /* Cards Layout (Grid) */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 8px;
+            padding: 25px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            transition: 0.3s;
+            border-top: 4px solid #3498db;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+        .card h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+
+        .card p {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #2980b9;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+            font-size: 14px;
+        }
+
+        footer span {
+            color: #3498db;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">📚 StudyHub</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="subject.html">Subjects</a></li>
+            <li><a href="notes.html">Notes</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Welcome to My Study Portal</h1>
+        <p>Yahan aapko sabhi important subjects ke notes aur study materials milenge.</p>
+        <!-- Developer Name Badge -->
+        <div class="dev-badge">👨‍💻 Lead Developer: MD YUSUF</div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h2 class="section-title">Available Subjects Notes</h2>
+        
+        <div class="cards-grid">
+            <!-- Card 1 -->
+            <div class="card">
+                <h3>Physics Notes</h3>
+                <p>Class 11 & 12 ke important formulas, derivations, aur quarterly exam ke questions.</p>
+                <a href="physics.html" class="btn">View Notes</a>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+                <h3>Chemistry Notes</h3>
+                <p>Organic aur Inorganic chemistry ke short notes aur reaction charts.</p>
+                <a href="chemistry.html" class="btn">View Notes</a>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+                <h3>Mathematics</h3>
+                <p>Important formulas, practice sets, aur step-by-step problem solutions.</p>
+                <a href="math.html"btn">View Notes</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 StudyHub | Designed & Developed with ❤️ by <span>Md Yusuf</span></p>
+    </footer>
+
+</body>
+</html>
